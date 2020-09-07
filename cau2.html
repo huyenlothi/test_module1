@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>cau2</title>
+</head>
+<body>
+<script>
+    function findIndex(n, arr) {
+        let index = -1;
+        for (let i = 0; i < arr.length; i++) {
+            if (n == arr[i]) {
+                index = i;
+            }
+        }
+        if (index != -1) {
+            return index;
+        } else
+            return (n + "khong nam trong mang");
+    }
+
+    let ar = [2, 6, -2, 100, 50];
+    let result = findIndex(5, ar);
+    console.log(result);
+</script>
+</body>
+</html>

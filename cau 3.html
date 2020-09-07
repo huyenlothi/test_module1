@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>cau3</title>
+</head>
+<body>
+<script>
+    // function countnum(arr) {
+    //     let count = 0;
+    //     for (let i = 0; i < arr.length; i++) {
+    //         if (arr[i] < 0) {
+    //             count++;
+    //         }
+    //     }
+    //     if (count != 0) {
+    //         return count;
+    //     } else
+    //         return false;
+    // }
+    //
+    // let b = [3, 8, 9, 6, 98, 8];
+    // let result = countnum(b);
+    // console.log(result);
+    function countN(arr) {
+        let arr1 = ["a", "o", "u", "i", "e", "A", "O", "U", "I", "E"];
+        let count = 0;
+        for (let i = 0; i < arr.length; i++) {
+            for (let j = 0; j < arr1.length; j++) {
+                if (arr[i] == arr1[j]) {
+                    count++;
+                }
+            }
+        }
+        if (count != 0) {
+            return count;
+        } else
+            return false;
+    }
+
+    let test = prompt("nhap chuoi de dem");
+    let result = countN(test);
+    document.write(result);
+</script>
+</body>
+</html>
